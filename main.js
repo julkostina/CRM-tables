@@ -1,4 +1,4 @@
-import customers from "/customers.js"; 
+import customers from "./customers.js"; 
 
 
 const customerList = document.getElementsByClassName("customer-table_body_body")[0];

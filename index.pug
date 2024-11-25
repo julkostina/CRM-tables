@@ -5,27 +5,27 @@ html
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title CRM Dashboard
-    link(rel="stylesheet", href="../../style.css")
+    link(rel="stylesheet", href="./style.css")
   body
     header.user
         h1.user-greeting Hello #{currentUser.name}👋🏼,
     nav.navigation 
         figure.navigation-logo 
-            img(src="/imgs/setting 1.png", alt="logo").navigation-logo_img
+            img(src="./imgs/setting 1.png", alt="logo").navigation-logo_img
             figcaption.navigation-logo_caption
                 h1.navigation-logo_main Dashboard
                 p.navigation-logo_submain v.01
         ul.navigation-list
             div(class=`navigation-list-item Dashboard`)                    
-                img.navigation-list-item_img(src="/imgs/key-square.svg", alt="dashboard")
+                img.navigation-list-item_img(src="./imgs/key-square.svg", alt="dashboard")
                 li.navigation-list-item_item.dashboard Dashboard
             for item in [ {name:'Product', logo:"3d-square 1.svg"}, {name:'Customers', logo:"user-square 1.svg"}, {name:'Income', logo:"wallet-money 2.svg"}, {name:'Promote', logo:"discount-shape 1.svg"}, {name:'Help', logo:"message-question 1.svg"}]
                 div(class=`navigation-list-item ${item.name==="Customers" ? "_active" : `${item.name}`}`)                    
-                    img.navigation-list-item_img(src=`/imgs/${item.logo}`, alt=`${item.name}`)
+                    img.navigation-list-item_img(src=`./imgs/${item.logo}`, alt=`${item.name}`)
                     li.navigation-list-item_item #{item.name} 
                         img.navigation-list-item_img_go(src="/imgs/Vector.svg", alt="go ahead") 
         figure.navigation-user 
-            img.navigation-user_img(src="/imgs/Ellipse 8.png", alt="user image") 
+            img.navigation-user_img(src="./imgs/Ellipse 8.png", alt="user image") 
             figcaption.navigation-user_caption 
                 h2.navigation-user_name #{currentUser.name} 
                 p.navigation-user_position #{currentUser.position} 
@@ -60,4 +60,4 @@ html
                     button.customer-table_footer_pagination-pages_button(style={padding:"3px 5.4px"}) 40
                     button.customer-table_footer_pagination-pages_button
                         img.customer-table_footer_pagination-button_next_img(src="../imgs/_(1).svg", alt="next")
-    script(type="module" src="../main.js")
+    script(type="module" src="./main.js")

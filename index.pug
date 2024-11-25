@@ -37,7 +37,7 @@ html
                     p.customer-table_subheading Active Members 
                 .customer-table_body_delimeter 
                 .customer-table_search-bar
-                    img.customer-table_search-bar_img(src="/imgs/search 1.svg", alt="search")
+                    img.customer-table_search-bar_img(src="./imgs/search 1.svg", alt="search")
                     input.customer-table_search-bar_input(type="text", placeholder="Search")
             table.customer-table_body
                 - const values = ["Customer Name", "Company", "Phone Number", "Email", "Country","Status"]
@@ -51,7 +51,7 @@ html
                     p.customer-table_footer-details_text Showing data 1 to 8 of  256K entries
                 .customer-table_footer-pagination
                     button.customer-table_footer_pagination-button 
-                        img.customer-table_footer_pagination-button_previous_img(src="../imgs/_.svg", alt="previous")
+                        img.customer-table_footer_pagination-button_previous_img(src="./imgs/_.svg", alt="previous")
                     button.customer-table_footer_pagination-pages_button 1
                     button.customer-table_footer_pagination-pages_button 2
                     button.customer-table_footer_pagination-pages_button 3
@@ -59,5 +59,5 @@ html
                     p.customer-table_footer_pagination-pages-rest ...
                     button.customer-table_footer_pagination-pages_button(style={padding:"3px 5.4px"}) 40
                     button.customer-table_footer_pagination-pages_button
-                        img.customer-table_footer_pagination-button_next_img(src="../imgs/_(1).svg", alt="next")
+                        img.customer-table_footer_pagination-button_next_img(src="./imgs/_(1).svg", alt="next")
     script(type="module" src="./main.js")
